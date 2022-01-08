@@ -3,6 +3,9 @@
 A formatter for ExUnit that helps visualize the test execution and
 find bottlenecks in your test suite.
 
+
+![TRACE](./assets/chrome_trace.png "TRACE")
+
 ## Installation
 
 ```elixir
