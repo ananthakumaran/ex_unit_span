@@ -1,4 +1,6 @@
 defmodule ExUnitSpan.Track do
+  @moduledoc false
+
   defstruct [:lanes, :free_lanes, :started_at]
 
   def from_events(events) do

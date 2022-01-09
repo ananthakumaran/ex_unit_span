@@ -1,12 +1,16 @@
 defmodule ExUnitSpan do
   alias ExUnitSpan.Track
   alias ExUnitSpan.ChromeTrace
+
+  @doc false
   use GenServer
 
   defmodule State do
+    @moduledoc false
     defstruct [:cli_formatter, events: []]
   end
 
+  @doc false
   def init(opts) do
     {:ok, pid} = GenServer.start_link(ExUnit.CLIFormatter, opts)
     {:ok, %State{cli_formatter: pid}}
