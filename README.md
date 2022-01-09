@@ -1,5 +1,8 @@
 # ExUnitSpan
 
+[![CI](https://github.com/ananthakumaran/ex_unit_span/actions/workflows/ci.yml/badge.svg)](https://github.com/ananthakumaran/ex_unit_span/actions/workflows/ci.yml)
+[![Hex.pm](https://img.shields.io/hexpm/v/ex_unit_span.svg)](https://hex.pm/packages/ex_unit_span)
+
 An ExUnit formatter to visualize test execution and find bottlenecks in your test suite.
 
 ![TRACE](https://github.com/ananthakumaran/ex_unit_span/raw/master/assets/chrome_trace.png "TRACE")
