@@ -32,7 +32,7 @@ defmodule ExUnitSpan.Track do
       %{track | lanes: lanes}
     else
       lane_id = Enum.min(Map.keys(free_lanes))
-      {lane, free_lanes} = Map.pop!(free_lanes, lane_id)
+      {lane, free_lanes} = Map.pop(free_lanes, lane_id)
       lanes = Map.put(lanes, lane_id, [parent | lane])
       %{track | lanes: lanes, free_lanes: free_lanes}
     end
@@ -52,7 +52,7 @@ defmodule ExUnitSpan.Track do
       |> Map.update!(:children, &Enum.reverse/1)
 
     free_lanes = Map.put(free_lanes, lane_id, [parent | rest])
-    {_, lanes} = Map.pop!(lanes, lane_id)
+    {_, lanes} = Map.pop(lanes, lane_id)
     %{track | lanes: lanes, free_lanes: free_lanes}
   end
 
