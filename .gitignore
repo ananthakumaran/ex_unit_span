@@ -24,3 +24,5 @@ ex_unit_span-*.tar
 
 # Temporary files, for example, from tests.
 /tmp/
+
+ex_unit_span.json
