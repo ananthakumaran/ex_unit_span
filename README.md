@@ -1,7 +1,6 @@
 # ExUnitSpan
 
-A formatter for ExUnit that helps visualize the test execution and
-find bottlenecks in your test suite.
+An ExUnit formatter to visualize test execution and find bottlenecks in your test suite.
 
 ![TRACE](https://github.com/ananthakumaran/ex_unit_span/raw/master/assets/chrome_trace.png "TRACE")
 

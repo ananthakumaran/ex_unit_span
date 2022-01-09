@@ -11,7 +11,8 @@ defmodule ExUnitSpan.MixProject do
       elixir: "~> 1.8",
       start_permanent: Mix.env() == :prod,
       deps: deps(),
-      docs: docs()
+      docs: docs(),
+      package: package()
     ]
   end
 
@@ -37,6 +38,17 @@ defmodule ExUnitSpan.MixProject do
       source_url: @source_url,
       source_ref: "v#{@version}",
       formatters: ["html"]
+    ]
+  end
+
+  defp package do
+    [
+      description: "An ExUnit formatter to visualize test execution",
+      licenses: ["MIT"],
+      maintainers: ["ananthakumaran@gmail.com"],
+      links: %{
+        "GitHub" => @source_url
+      }
     ]
   end
 end
